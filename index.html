@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperative Toggle</title>
+    <style>
+       .highlight {
+           background-color: yellow;
+       }
+       </style>
+</head>
+<body>
+    <button id="toggleButton">Toggle Highlight</button>
+    <p id="paragraph">This is a paragraph.</p>
+
+    <!-- Add jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#toggleButton').click(function() {
+                $('#paragraph').toggleClass('highlight');
+            });
+        });
+        </script>
+</body>
+</html>
